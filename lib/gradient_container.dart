@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:udemy_tutorial/styled_text.dart';
 
-// ----- using final as a variable/data container means ki later on in the code this data container will never receive a new value
-// final startAlignment = Alignment.topLeft; 
-// final endAlignment = Alignment.bottomRight;
-
 const startAlignment = Alignment.topLeft; 
-const endAlignment = Alignment.bottomRight; // ---- const is same as final but the thing is it provides some more information to dart when used instead of final. And it is advisable to use "const" everywhere.
+const endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key});
@@ -20,7 +16,7 @@ class GradientContainer extends StatelessWidget {
             Color.fromARGB(255, 26, 2, 80),
             Color.fromARGB(255, 45, 7, 98),
           ],
-          begin: startAlignment, // ----- here we are using those two variables which we have declared above in the code.
+          begin: startAlignment,
           end: endAlignment,
         ),
       ),
